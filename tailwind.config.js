@@ -14,7 +14,9 @@ module.exports = {
         gray: colors.stone
       },
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans]
+        sans: ["Recursive", ...defaultTheme.fontFamily.sans],
+        serif: ["Poppins", ...defaultTheme.fontFamily.serif],
+        mono: ["Recursive", ...defaultTheme.fontFamily.mono]
       }
     }
   }

@@ -8,7 +8,7 @@
           :key="link._path"
           :to="link._path"
           active-class="font-bold"
-          class="mr-4"
+          class="mr-4 font-serif"
         >
           {{ link.navTitle || link.title }}
         </NuxtLink>
