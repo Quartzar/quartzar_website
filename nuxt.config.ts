@@ -10,12 +10,24 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
-  // // https://pwa.nuxtjs.org/
-  // pwa: {
-  //   icon: {
-  //     fileName: 'icon.png?v1' 
-  //   }
-  // },
+  // https://github.com/nuxt-community/google-fonts-module
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    "@nuxtjs/tailwindcss",
+    // Simple usage
+    '@nuxtjs/google-fonts',
+    // With options
+    ['@nuxtjs/google-fonts', { /* module options */ }]
+  ],
+  // https://tailwindcss.nuxtjs.org/examples/tailwindui
+  googleFonts: {
+    families: {
+      Poppins: true
+    }
+  },
+  tailwindcss: {
+    jit: true
+  },
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: ''
