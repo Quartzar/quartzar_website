@@ -18,7 +18,12 @@
 .prose h3 a {
   @apply no-underline;
   &:hover {
-    @apply border-b border-neutral-600 dark:border-neutral-300;
+    @apply px-4 py-2 font-semibold bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-lg shadow-blue-500/50 ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-solid;
   }
+},
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply font-serif;
 }
 </style>

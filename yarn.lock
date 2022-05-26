@@ -6840,7 +6840,7 @@ table@^6.8.0:
 
 tailwind-config-viewer@^1.7.0:
   version "1.7.0"
-  resolved "https://registry.npmjs.org/tailwind-config-viewer/-/tailwind-config-viewer-1.7.0.tgz"
+  resolved "https://registry.yarnpkg.com/tailwind-config-viewer/-/tailwind-config-viewer-1.7.0.tgz#71d10c6ce31875fd4db742a90599ceeb2a385b63"
   integrity sha512-wCc8CxkG3+E+XTt0ahZqGb7lNmqGE0sw6ErXY0t2i//qKp9QVZbynS6SW6UnL9no3g9hf1b1Nk8fixZTlqA9Jg==
   dependencies:
     "@koa/router" "^9.0.1"
