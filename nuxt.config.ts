@@ -9,14 +9,13 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/pwa'
   ],
-  // https://pwa.nuxtjs.org/
-  pwa: {
-    icon: {
-      fileName: 'icon.png?v1' 
-    }
-  },
+  // // https://pwa.nuxtjs.org/
+  // pwa: {
+  //   icon: {
+  //     fileName: 'icon.png?v1' 
+  //   }
+  // },
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: ''
