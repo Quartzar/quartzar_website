@@ -43,4 +43,10 @@ export default defineNuxtConfig({
       theme: 'material-default'
     }
   },
+  head: {
+    link: [
+      // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
+      { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
+    ]
+  }
 })

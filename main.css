@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .red-text-shadow {
+        text-shadow: red 0 -2px;
+    }
+}

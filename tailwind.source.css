@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .red-text-shadow {
+        text-shadow: red 0 -2px;
+    }
+}
+  
