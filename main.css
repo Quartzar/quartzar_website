@@ -7,3 +7,16 @@
         text-shadow: red 0 -2px;
     }
 }
+
+
+@layer base {
+    h1 {
+        @apply text-sm;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    .red-text-shadow {
+        text-shadow: red 0 -2px;
+    }
+}
