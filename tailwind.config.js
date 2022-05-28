@@ -9,7 +9,10 @@ module.exports = {
     require('autoprefixer'),
 
   ],
-  content: ['content/**/*.{md,yml,json,json5,csv}'],
+  content: [
+    './content/**/*.{md,yml,json,json5,csv}',
+    './src/**/*.{html,js}'
+  ],
   theme: {
     extend: {
       colors: {

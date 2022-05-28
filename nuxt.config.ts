@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss",
+    // '@nuxtjs/postcss',
     // Simple usage
     '@nuxtjs/google-fonts',
     // With options
@@ -48,5 +49,8 @@ export default defineNuxtConfig({
       // { rel: 'icon', type: 'image/gif', href: '~/public/animated_favigon.gif'},
       { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
     ]
-  }
+  },
+  css: [
+    '@/assets/css/main.css',
+  ],
 })

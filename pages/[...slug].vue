@@ -16,9 +16,9 @@
 /* Customize headers to remove default underline */
 .prose h2 a,
 .prose h3 a {
-  @apply no-underline;
+  @apply no-underline transition-all ease-in;
   &:hover {
-    @apply px-4 py-2 font-semibold bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-lg shadow-blue-500/50 ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-solid;
+    @apply transition-all ease-out duration-500 px-4 py-2 font-semibold bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-lg shadow-blue-500/50 ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-solid;
   }
 }
 .prose h1,
