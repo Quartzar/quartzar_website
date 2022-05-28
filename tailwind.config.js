@@ -5,19 +5,20 @@ module.exports = {
   darkMode: 'class',
   plugins: [
     require('@tailwindcss/typography'),
-    require('tailwindcss')('./tailwind.config.js'),
+    // require('tailwindcss')('./tailwind.config.js'),
     require('autoprefixer'),
 
   ],
   content: [
     './content/**/*.{md,yml,json,json5,csv}',
-    './src/**/*.{html,js}'
   ],
   theme: {
     extend: {
       colors: {
         // Customize the feeling of your site
-        gray: colors.stone
+        zinc: {
+          950: '#111111'
+        }
       },
       fontFamily: {
         sans: ["Recursive", ...defaultTheme.fontFamily.sans],
