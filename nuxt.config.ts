@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     // With options
     ['@nuxtjs/google-fonts', { /* module options */ }]
   ],
+  
   // https://tailwindcss.nuxtjs.org/examples/tailwindui
   googleFonts: {
     families: {
@@ -27,13 +28,16 @@ export default defineNuxtConfig({
       Recursive: true
     }
   },
+
   tailwindcss: {
     jit: true
   },
+
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: ''
   },
+
   // https://content.nuxtjs.org
   content: {
     navigation: {
@@ -50,7 +54,4 @@ export default defineNuxtConfig({
       { rel: 'icon', type: 'image/x-icon', href: '~/public/favicon.ico' }
     ]
   },
-  css: [
-    '@/assets/css/main.css',
-  ],
 })
