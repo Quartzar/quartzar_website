@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@vueuse/nuxt',
   ],
   // https://github.com/nuxt-community/google-fonts-module
   buildModules: [

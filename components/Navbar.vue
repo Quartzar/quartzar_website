@@ -7,7 +7,7 @@
           v-for="link of navigation"
           :key="link._path"
           :to="link._path"
-          active-class="font-bold"
+          active-class="font-bold transition-all ease-in ease-out"
           class="mr-4 font-serif"
         >
           {{ link.navTitle || link.title }}

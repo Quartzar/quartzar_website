@@ -29,7 +29,8 @@ module.exports = {
       colors: {
         // Customize the feeling of your site
         zinc: {
-          950: '#111111'
+          940: '#111111',
+          950: '#010409'
         }
       },
       fontFamily: {

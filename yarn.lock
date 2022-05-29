@@ -297,6 +297,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@headlessui/vue@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.4.tgz#8492bbb044a9b19ee92bef9cd4d0c3d8feed8588"
+  integrity sha512-axZMcfRLNuwHESPMgDb0Vj7xxlNPmsPl77pvoRZGzJh7lRdRic9kC/qbVM8G36OpIJRZzqrlADLQ2JIObhQjBg==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.5.tgz"
@@ -310,6 +315,11 @@
   version "1.2.1"
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
+
+"@iconify/icons-heroicons@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-heroicons/-/icons-heroicons-1.0.1.tgz#cdb929544a7730a7261935fd2a9012171069fa4f"
+  integrity sha512-wfqAivPwf8scpG4lrtcmeuh7km5nHYbif4axl5FFM0Gx+L1pMrKQjEddIPZNzwAUB1lrC2DP/7+e3yUEMxeWqA==
 
 "@iconify/vue@^3.2.1":
   version "3.2.1"
@@ -495,7 +505,7 @@
     unimport "^0.1.6"
     untyped "^0.4.4"
 
-"@nuxt/kit@^3.0.0-rc.3":
+"@nuxt/kit@^3.0.0-rc.2", "@nuxt/kit@^3.0.0-rc.3":
   version "3.0.0-rc.3"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.0.0-rc.3.tgz"
   integrity sha512-aD993HKXZ76cwxkM2LCwWRQaOI3RjLCg/kj+8ZS6qN4VrpwrZp4xM59YYIYs3/Vze4OG3D4+0gr0u5zdgf8v8g==
@@ -1185,10 +1195,42 @@
   resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.2.36.tgz"
   integrity sha512-JtB41wXl7Au3+Nl3gD16Cfpj7k/6aCroZ6BbOiCMFCMvrOpkg/qQUXTso2XowaNqBbnkuGHurLAqkLBxNGc1hQ==
 
+"@vueuse/core@8.5.0", "@vueuse/core@^8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.5.0.tgz#2b7548e52165c88e1463756c36188e105d806543"
+  integrity sha512-VEJ6sGNsPlUp0o9BGda2YISvDZbhWJSOJu5zlp2TufRGVrLcYUKr31jyFEOj6RXzG3k/H4aCYeZyjpItfU8glw==
+  dependencies:
+    "@vueuse/metadata" "8.5.0"
+    "@vueuse/shared" "8.5.0"
+    vue-demi "*"
+
 "@vueuse/head@^0.7.6":
   version "0.7.6"
   resolved "https://registry.npmjs.org/@vueuse/head/-/head-0.7.6.tgz"
   integrity sha512-cOWqCkT3WiF5oEpw+VVEWUJd9RLD5rc7DmnFp3cePsejp+t7686uKD9Z9ZU7Twb7R/BI8iexKTmXo9D/F3v6UA==
+
+"@vueuse/metadata@8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.5.0.tgz#1aaa3787922cfda0f38243aaa7779366a669b4db"
+  integrity sha512-WxsD+Cd+bn+HcjpY6Dl9FJ8ywTRTT9pTwk3bCQpzEhXVYAyNczKDSahk50fCfIJKeWHhyI4B2+/ZEOxQAkUr0g==
+
+"@vueuse/nuxt@^8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/nuxt/-/nuxt-8.5.0.tgz#392617df38d56f87b705f5feef4af27544371f6c"
+  integrity sha512-riGrDwlTQbjSDxyw46oc1catXpZwzzRrEk+PTy8NQZG6uevgJ8wNuAhPVx/5oG0jYG/t2orIFfc9xGEA6uytSg==
+  dependencies:
+    "@nuxt/kit" "^3.0.0-rc.2"
+    "@vueuse/core" "8.5.0"
+    "@vueuse/metadata" "8.5.0"
+    local-pkg "^0.4.1"
+    vue-demi "*"
+
+"@vueuse/shared@8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.5.0.tgz#fa01ecd3161933f521dd6428b9ef8015ded1bbd3"
+  integrity sha512-qKG+SZb44VvGD4dU5cQ63z4JE2Yk39hQUecR0a9sEdJA01cx+XrxAvFKJfPooxwoiqalAVw/ktWK6xbyc/jS3g==
+  dependencies:
+    vue-demi "*"
 
 abbrev@1:
   version "1.1.1"
@@ -7502,6 +7544,11 @@ vue-bundle-renderer@^0.3.8:
   integrity sha512-1F4P4Aw92PW9XUX0ojC18Ye1P0/kvwq6Jx6kaeokQ+/FoVrfBsKtuJPib1TqGRvGYKCiTCweefun6DidoEvECg==
   dependencies:
     bundle-runner "^0.0.1"
+
+vue-demi@*:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue-eslint-parser@^8.0.1:
   version "8.3.0"

@@ -7,9 +7,9 @@
 }
 
 @layer components {
-    .red-text-shadow {
-        text-shadow: red 0 -2px;
-    }
+    /* .red-text-shadow {
+        text-shadow: rgb(38, 42, 175);
+    } */
 }
 
 
@@ -20,14 +20,14 @@
     h2 {
         @apply text-xl;
     }
-    .red-text-shadow {
-        text-shadow: red 0 -2px;
-    }
+    /* .red-text-shadow {
+        text-shadow: rgb(38, 42, 175);
+    } */
 }
 
-.red-text-shadow {
-    text-shadow: red 0 -2px;
-}
+/* .red-text-shadow {
+    text-shadow: rgb(38, 42, 175);
+} */
 
 @layer utilities {
     .my-move {
@@ -40,7 +40,7 @@
             to {top: 200px;}
       }
     }
-    .emboss-text {
+    .rgb-text {
         filter: blur(0.1px);
         position: relative;
         letter-spacing: 5px;
@@ -74,8 +74,7 @@
         /*white light*/
         1px 1px 120px rgba(255,255,255,0.6);
     }
-    .emboss-text::after {
-        content: var(--heading1);
+    .rgb-text::after {
         letter-spacing: 5px;
         position: absolute;
         top:0;
@@ -91,4 +90,17 @@
         60% { text-shadow: 0px 0px 100px rgba(199,11,11,0.9);}
         80% { text-shadow: 0px 0px 100px rgba(199,96,11,0.9);}
     }  
+    .blue-text-shadow {
+        text-shadow: 0px 0px 5px rgb(38, 42, 175);
+    }
+    .navbar-fixed {
+        position:fixed; /* fixing the position takes it out of html flow - knows
+                         nothing about where to locate itself except by browser
+                         coordinates */
+        left:0;           /* top left corner should start at leftmost spot */
+        top:0;            /* top left corner should start at topmost spot */
+        width:100vw;      /* take up the full browser width */
+        z-index:200;  /* high z index so other content scrolls underneath */
+        height:55px;     /* define height for content */
+      }
 }

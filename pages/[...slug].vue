@@ -1,8 +1,11 @@
+:root {
+  --heading1: 'test'; 
+}
 <template>
-  <div class="max-w-4xl px-4 py-10 m-auto bg-white sm:px-8 sm:shadow dark:bg-zinc-900 sm:rounded">
-    <!-- <h1>{{ page.title }}</h1> -->
+  <div class="max-w-4xl px-4 py-10 m-auto bg-white sm:px-8 sm:shadow dark:bg-zinc-940 sm:rounded">
     <!-- Fetch and display the Markdown document from current path -->
     <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
+      
       <!-- Slot if document is not found -->
       <template #not-found>
         <h1 class="text-2xl">
@@ -24,18 +27,38 @@
   }
   .prose h2,
   .prose h3 {
-    @apply font-serif red-text-shadow;
+    @apply font-serif blue-text-shadow;
   }
   .prose h1 {
-    @apply font-serif emboss-text after:content-[page.title];
+    @apply font-serif rgb-text after:content-[var(--content-title)] text-center;
   }
 </style>
 
-<script>
-  export default {
-    async asyncData ({ $content }) {
-      const page = await $content('/').fetch()
-      return { page }  
-    }
-  }
+<script setup>
+  const route = useRoute();
+  const { data } = await useAsyncData(`content-${route.params.slug}`, () =>
+    queryContent(`/${route.params.slug}`).findOne()
+  );
+  console.log({ title: data.value.title });
+  const contentCssVar = useCssVar('--content-title');
+  contentCssVar.value = `'${data.value.title}'`
 </script>
+
+<!-- .emboss-teext::after {
+        content: v-bind(content);
+        /*content: 'unnnn'; */
+        letter-spacing: 5px;
+        position: absolute;
+        top:0;
+        left:0;
+        text-shadow: 0px 0px 100px rgba(11,124,199,0.5);
+        animation: cycle 10s linear infinite;
+    }
+        
+    @keyframes cycle {
+        0% { text-shadow: 0px 0px 100px rgba(11,124,199,0.9);}
+        20% { text-shadow: 0px 0px 100px rgba(168,11,199,0.9);}
+        40% { text-shadow: 0px 0px 100px rgba(11,199,96,0.9);}
+        60% { text-shadow: 0px 0px 100px rgba(199,11,11,0.9);}
+        80% { text-shadow: 0px 0px 100px rgba(199,96,11,0.9);}
+    }   -->
