@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl px-4 py-10 m-auto bg-white sm:px-10 dark:bg-zinc-950  selection:bg-indigo-900 selection:text-white">
+  <div class="max-w-4xl px-4 pt-10 pb-5 m-auto bg-white sm:px-10 dark:bg-zinc-950  selection:bg-indigo-900 selection:text-white">
     <!-- Fetch and display the Markdown document from current path -->
     <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
       <!-- Slot if document is not found -->
@@ -40,7 +40,10 @@
     @apply my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out;
   }
   .prose p:nth-child(2) {
-    @apply text-justify first-letter:font-black first-letter:text-2xl first-letter:text-yellow-400 first-letter:mr-1 first-letter:pt-0.5 first-letter:float-left first-line:tracking-widest first-line:uppercase;
+    @apply first-letter:font-black first-letter:text-2xl first-letter:text-yellow-400 first-letter:mr-1 first-letter:pt-0.5 first-letter:float-left first-line:tracking-widest first-line:uppercase;
+  }
+  .prose p {
+    @apply text-justify 
   }
 </style>
 
