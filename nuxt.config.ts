@@ -19,14 +19,14 @@ export default defineNuxtConfig({
     // Simple usage
     '@nuxtjs/google-fonts',
     // With options
-    ['@nuxtjs/google-fonts', { /* module options */ }]
+    // ['@nuxtjs/google-fonts', { /* module options */ }]
   ],
   
   // https://tailwindcss.nuxtjs.org/examples/tailwindui
   googleFonts: {
     families: {
       Poppins: true,
-      Recursive: true
+      Recursive: true,
     }
   },
 

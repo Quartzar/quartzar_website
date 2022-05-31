@@ -25,11 +25,14 @@ module.exports = {
     './content/**/*.{md,yml,json,json5,csv}',
   ],
   theme: {
+    // fontFamily: {
+    //   'serif': ['Inter'],
+    // },
     extend: {
       colors: {
         // Customize the feeling of your site
         zinc: {
-          940: '#111111',
+          940: '#0d1117',
           950: '#010409'
         }
       },
