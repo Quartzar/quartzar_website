@@ -1,20 +1,20 @@
 <template>
-  <div class="max-w-4xl px-4 py-10 m-auto bg-white sm:px-10 sm:shadow dark:bg-zinc-950 sm:rounded selection:bg-indigo-900 selection:text-white">
+  <div class="max-w-4xl px-4 py-10 m-auto bg-white sm:px-10 dark:bg-zinc-950  selection:bg-indigo-900 selection:text-white">
     <!-- Fetch and display the Markdown document from current path -->
     <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
-      
       <!-- Slot if document is not found -->
       <template #not-found>
         
-        <h1 class="text-4xl font-serif text-white text-center font-black pb-5">
+        <h1 class="prose text-4xl text-white text-center font-black pb-5">
           uhhh, oops?
         </h1>
-        <p class ="text-lg text-white text-center pb-10">
+        <p class ="text-lg text-white text-center">
           this page doesn't exist, how have you managed that?<br>
           are you ok?<br><br>
-          <a href="/" class="font-bold italic">back home</a>
+          <a href="/" class="transition-all ease-in-out font-bold italic border-4 border-transparent leading-none hover:text-9xl hover:text-black hover:border-4 hover:rounded-lg hover:px-6 duration-[2500ms] hover:bg-yellow-500 hover:shadow-[0px_0px_60px_-5px_rgba(0,0,0,1)] hover:shadow-indigo-600">back home</a>
         </p>
-        <img src="https://i2.lensdump.com/i/tqu27v.jpg" alt="really_funny_whale_porn.jpg" class="mx-auto rounded-xl shadow-2xl shadow-indigo-600/50"/>
+        <img src="https://i2.lensdump.com/i/tqu27v.jpg" alt="really_funny_whale_porn.jpg" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/>
+        <img src="https://i.lensdump.com/i/tBg3D1.png" alt="tom_booth_snorts_jesus.png" class="my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out"/>
       </template>
     </ContentDoc>
   </div>
@@ -37,7 +37,7 @@
     @apply font-serif rgb-text after:content-[var(--content-title)] text-center;
   }
   .prose img {
-    @apply mx-auto rounded-xl shadow-2xl shadow-indigo-600/50 hover:shadow-indigo-600/75 transition-all ease-in-out;
+    @apply my-10 mx-auto rounded-xl shadow-[0px_0px_60px_-15px_rgba(0,0,0,1)] shadow-indigo-600 hover:shadow-indigo-600/75 transition-all ease-in-out;
   }
   .prose p:nth-child(2) {
     @apply text-justify first-letter:font-black first-letter:text-2xl first-letter:text-yellow-400 first-letter:mr-1 first-letter:pt-0.5 first-letter:float-left first-line:tracking-widest first-line:uppercase;
