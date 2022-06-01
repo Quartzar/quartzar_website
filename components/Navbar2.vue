@@ -12,17 +12,17 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://i1.lensdump.com/i/tdqUlH.gif" alt="Quartzar" />
-            <img class="hidden lg:block h-[1.9rem] w-auto" src="https://i2.lensdump.com/i/tqpcaZ.gif" alt="Quartzar" />
+            <img class="block lg:hidden h-8 w-auto" src="/logo_small.gif" alt="Quartzar" />
+            <img class="hidden lg:block h-[1.9rem] w-auto" src="/logo_full.gif" alt="Quartzar" />
           </div>
           <div class="hidden sm:block sm:ml-8">
-            <div class="flex justify-between px-4 mx-auto text-gray-200">
+            <div class="flex justify-between px-4 mx-auto text-gray-200 font-serif">
                 <ContentNavigation v-slot="{ navigation }">
                     <NuxtLink
                         v-for="link of navigation"
                         :key="link._path"
                         :to="link._path"
-                        active-class="font-bold px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"
+                        active-class="font-bold font-serif px-2 py-1 rounded-md bg-slate-900/25 shadow-sm shadow-slate-900 transition-all ease-in-out"
                         class="mr-4 font-serif py-1 hover:px-2 hover:rounded-md hover:bg-slate-800/25 hover:shadow-sm hover:shadow-slate-900 transition-all ease-in-out"
                     >
                     {{ link.navTitle || link.title }}

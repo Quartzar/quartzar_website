@@ -1093,7 +1093,7 @@
   dependencies:
     "@unocss/core" "0.37.1"
 
-"@unocss/transformer-directives@0.37.1":
+"@unocss/transformer-directives@0.37.1", "@unocss/transformer-directives@^0.37.1":
   version "0.37.1"
   resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-0.37.1.tgz#e8d95929f92d10340785acb7fd43df2d6dd45b83"
   integrity sha512-rKnRtrfkXWtU07PaF6OOSweETH6u7NLZeasIv1eOG5B5kjSupMlEEzCHGAPSPwrDgNcdV5SBGyu/SbYlAcqH3Q==

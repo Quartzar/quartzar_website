@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
+import presetWebFonts from '@unocss/preset-web-fonts'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     // '@nuxtjs/tailwindcss',
     '@unocss/nuxt',
+    '@unocss/preset-web-fonts',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
   ],
@@ -32,19 +34,43 @@ export default defineNuxtConfig({
     icons: true, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,
     typography: true, // enabled '@unocss/preset-typography'
-    //  'web-fonts': true, // enabled '@unocss/preset-web-fonts'
+    // webFonts: true, // enabled '@unocss/preset-web-fonts'
+    webFonts: {
+      provider: 'google', // default provider
+      fonts: {
+        // these will extend the default theme
+        sans: 'Poppins',
+        serif: 'Recursive',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
+        // custom ones
+        lobster: 'Lobster',
+        lato: [
+          {
+            name: 'Lato',
+            weights: ['400', '700'],
+            italic: true,
+          },
+          {
+            name: 'sans-serif',
+            provider: 'none',
+          },
+        ],
+      },
+    },
+    autoImport: true, // enabled importing tailwind.css
+    // transformerDirectives: true, // enabled '@unocss/transformer-directives'
  
     // core options
     shortcuts: [],
     rules: [],
   },
   // https://tailwindcss.nuxtjs.org/examples/tailwindui
-  googleFonts: {
-    families: {
-      Poppins: true,
-      Recursive: true,
-    }
-  },
+  // googleFonts: {
+  //   families: {
+  //     Poppins: true,
+  //     Recursive: true,
+  //   }
+  // },
 
   // tailwindcss: {
   //   jit: true
