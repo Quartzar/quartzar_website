@@ -7,21 +7,37 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
+    '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
   ],
   // https://github.com/nuxt-community/google-fonts-module
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss",
+    // "@nuxtjs/tailwindcss",
+    // Doc: https://github.com/unocss/unocss
+    '@unocss/nuxt',
     // '@nuxtjs/postcss',
     // Simple usage
-    '@nuxtjs/google-fonts',
+    // '@nuxtjs/google-fonts',
     // With options
     // ['@nuxtjs/google-fonts', { /* module options */ }]
   ],
-  
+  // Doc: https://github.com/unocss/unocss/tree/main/packages/nuxt
+  unocss: {
+    preflight: true,
+    // presets
+    uno: true, // enabled `@unocss/preset-uno`
+    icons: true, // enabled `@unocss/preset-icons`
+    attributify: true, // enabled `@unocss/preset-attributify`,
+    typography: true, // enabled '@unocss/preset-typography'
+    //  'web-fonts': true, // enabled '@unocss/preset-web-fonts'
+ 
+    // core options
+    shortcuts: [],
+    rules: [],
+  },
   // https://tailwindcss.nuxtjs.org/examples/tailwindui
   googleFonts: {
     families: {
@@ -30,9 +46,9 @@ export default defineNuxtConfig({
     }
   },
 
-  tailwindcss: {
-    jit: true
-  },
+  // tailwindcss: {
+  //   jit: true
+  // },
 
   // https://color-mode.nuxtjs.org
   colorMode: {
